@@ -2,7 +2,7 @@
 
 module ::Jobs
   class SummariesBackfill < ::Jobs::Scheduled
-    every 5.minutes
+    every 2.minutes
     cluster_concurrency 1
 
     def execute(_args)
